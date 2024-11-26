@@ -1,0 +1,39 @@
+{
+    "semi": true,
+    "trailingComma": "es5",
+    "singleQuote": true,
+    "printWidth": 80,
+    "tabWidth": 2,
+    "useTabs": false,
+    "arrowParens": "avoid",
+    "bracketSpacing": true,
+    "jsxSingleQuote": false,
+    "jsxBracketSameLine": false,
+    "endOfLine": "lf",
+    "overrides": [
+        {
+            "files": ".ts",
+            "options": {
+                "parser": "typescript"
+            }
+        },
+        {
+            "files": ".scss",
+            "options": {
+                "singleQuote": false
+            }
+        },
+        {
+            "files": ".json",
+            "options": {
+                "tabWidth": 2
+            }
+        },
+        {
+            "files": ".prettierrc",
+            "options": {
+                "tabWidth": 4
+            }
+        }
+    ]
+}
