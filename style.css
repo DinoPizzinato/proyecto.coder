@@ -18,8 +18,8 @@
 
 .carousel {
   display: flex;
-  width: 300%;
-  animation: slide 9s infinite;
+  width: 1000%;
+  animation: slide 5s infinite;
 }
 
 .carousel-item {
@@ -109,6 +109,8 @@ h1.nombrepag {
 h2 {
   text-align: center;
   padding: 15px 0;
+  -webkit-animation: scale-up-center 1s;
+  animation: scale-up-center 1s;
 }
 
 /* Estilo del menú de navegación */
@@ -138,6 +140,38 @@ h2 {
   text-decoration: none;
   margin: 0 15px;
   transition: background-color 0.3s;
+}
+.barramenu {
+  background: linear-gradient(
+    90deg,
+    rgba(7, 3, 73, 1) 0%,
+    rgba(5, 99, 181, 1) 38%,
+    rgba(0, 212, 255, 1) 99%
+  );
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed; /* Mantiene el menú fijo */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Asegura que esté sobre otros elementos */
+}
+
+.search-bar {
+  position: fixed; /* Mantiene la barra de búsqueda fija */
+  top: 10px;
+  right: 10px;
+  display: flex;
+  align-items: center;
+  padding: 0 5px;
+  z-index: 1000;
+}
+
+body {
+  padding-top: 60px; /* Para que el contenido no quede oculto debajo del menú fijo */
 }
 
 .barramenu a:hover {
@@ -358,6 +392,59 @@ footer p {
   width: 100%;
   max-width: 450px;
   margin: 10px;
+}
+.form-container {
+  border: 1px solid #ccc; /* Establece el borde del recuadro */
+  padding: 20px; /* Espaciado interior del recuadro */
+  width: 300px; /* Ajusta el ancho del formulario */
+  margin: 0 auto; /* Centra el formulario en la página */
+  background-color: #f9f9f9; /* Fondo del recuadro */
+  border-radius: 10px; /* Bordes redondeados */
+}
+
+.form-container div {
+  margin-bottom: 15px; /* Espaciado entre los campos */
+}
+
+.form-container label {
+  display: block;
+  font-weight: bold;
+}
+
+.form-container input,
+.form-container textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.form-container button {
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.form-container button:hover {
+  background-color: #0056b3;
+}
+.insta a {
+  text-decoration: none; /* Elimina el subrayado */
+  color: inherit; /* Mantiene el color del texto sin subrayado */
+}
+
+@keyframes flip-horizontal-fwd {
+  0% {
+    -webkit-transform: translateZ(0) rotateX(0);
+    transform: translateZ(0) rotateX(0);
+  }
+  100% {
+    -webkit-transform: translateZ(160px) rotateX(-180deg);
+    transform: translateZ(160px) rotateX(-180deg);
+  }
 }
 
 /* Responsividad */
