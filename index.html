@@ -10,12 +10,6 @@
       type="image/png"
       href="./ARCHIVOS/image/INICIO/logocolor.ico"
     />
-
-    <img
-      class="logo"
-      src="./ARCHIVOS/image/INICIO/LOGOTIPO/logo-remove-background.com.png"
-      alt="logo"
-    />
   </head>
   <body>
     <!-- Título principal de la página -->
@@ -30,34 +24,42 @@
         </div>
         <ul class="list">
           <!-- Enlaces de navegación -->
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="Cañas.html">Cañas</a></li>
-          <li><a href="Reels.html">Reels</a></li>
-          <li><a href="Señuelos.html">Señuelos</a></li>
-          <li><a href="Contacto.html">Contacto</a></li>
+          <li class="inicio"><a href="index.html">Inicio</a></li>
+          <li class="cañas"><a href="Cañas.html">Cañas</a></li>
+          <li class="reels"><a href="Reels.html">Reels</a></li>
+          <li class="señuelos"><a href="Señuelos.html">Señuelos</a></li>
+          <li class="contacto"><a href="Contacto.html">Contacto</a></li>
         </ul>
       </nav>
     </header>
 
     <!-- Sección de imágenes -->
     <section class="img1">
-      <img
-        class="img11"
-        src="./ARCHIVOS/image/INICIO/Fondoh2.jpg"
-        alt="Foto de hombre pescando"
-      />
-      <iframe
-        width="350"
-        src="https://www.youtube.com/embed/AHxbzCJKxV0?si=SPcIYLOVj4ddBp0m"
-        title="YouTube video player"
-        frameborder="0"
-        allowfullscreen
-      ></iframe>
-      <img
-        class="img2"
-        src="./ARCHIVOS/image/INICIO/Fondo2h2.jpg"
-        alt="Foto de caña con Señuelos"
-      />
+      <div class="carousel">
+        <div class="carousel-item">
+          <img
+            class="img11"
+            src="./ARCHIVOS/image/INICIO/Fondoh2.jpg"
+            alt="Foto de hombre pescando"
+          />
+        </div>
+        <div class="carousel-item">
+          <iframe
+            width="350"
+            src="https://www.youtube.com/embed/AHxbzCJKxV0?si=SPcIYLOVj4ddBp0m"
+            title="YouTube video player"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="carousel-item">
+          <img
+            class="img2"
+            src="./ARCHIVOS/image/INICIO/Fondo2h2.jpg"
+            alt="Foto de caña con Señuelos"
+          />
+        </div>
+      </div>
     </section>
 
     <!-- Título de la sección de productos -->
