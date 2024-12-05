@@ -25,11 +25,11 @@
         </div>
         <ul class="list">
           <!-- Enlaces de navegación -->
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="Cañas.html">Cañas</a></li>
-          <li><a href="Reels.html">Reels</a></li>
-          <li><a href="Señuelos.html">Señuelos</a></li>
-          <li><a href="Contacto.html">Contacto</a></li>
+          <li class="inicio"><a href="index.html">Inicio</a></li>
+          <li class="cañas"><a href="Cañas.html">Cañas</a></li>
+          <li class="reels"><a href="Reels.html">Reels</a></li>
+          <li class="señuelos"><a href="Señuelos.html">Señuelos</a></li>
+          <li class="contacto"><a href="Contacto.html">Contacto</a></li>
         </ul>
       </nav>
     </header>
@@ -47,12 +47,13 @@
 
       <!-- Formulario de contacto -->
       <form
+        id="contact-form"
         action="/my-handling-form-page"
         method="post"
         class="form-container"
       >
         <div>
-          <label for="name">Nombre:</label>
+          <label for="name"> Nombre: </label>
           <input type="text" id="name" name="user_name" required />
         </div>
         <div>
@@ -103,5 +104,13 @@
       </p>
       <p>&copy; 2024 FishingHouse</p>
     </footer>
+
+    <!-- Modal de éxito -->
+    <div id="success-modal" class="modal">
+      <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <p>¡Formulario enviado correctamente!</p>
+      </div>
+    </div>
   </body>
 </html>
