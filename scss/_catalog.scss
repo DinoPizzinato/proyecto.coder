@@ -1,0 +1,33 @@
+.catalog {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.product {
+  border: 1px solid #ddd;
+  border-radius: var(--border-radius);
+  padding: 15px;
+  background-color: #fff;
+  width: 250px;
+  text-align: center;
+  box-shadow: var(--box-shadow);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.product img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--border-radius);
+}
+
+.price {
+  font-weight: bold;
+  color: var(--accent-color);
+}

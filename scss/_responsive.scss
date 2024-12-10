@@ -1,0 +1,25 @@
+@media (max-width: 768px) {
+  .barramenu ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .barramenu a {
+    margin: 5px 0;
+    padding: 10px 20px;
+  }
+
+  .catalog {
+    grid-template-columns: 1fr;
+  }
+
+  .product {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  .contact-form {
+    padding: 15px;
+    max-width: 95%;
+  }
+}

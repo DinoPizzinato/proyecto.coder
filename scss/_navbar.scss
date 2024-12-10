@@ -1,0 +1,39 @@
+.barramenu {
+  background: linear-gradient(
+    90deg,
+    rgba(7, 3, 73, 1) 0%,
+    rgba(5, 99, 181, 1) 38%,
+    rgba(0, 212, 255, 1) 99%
+  );
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.barramenu a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  transition: background-color 0.3s;
+}
+
+.barramenu a:hover {
+  background-color: var(--hover-color);
+}
+
+.search-bar {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  align-items: center;
+  padding: 0 5px;
+  z-index: 1000;
+}
