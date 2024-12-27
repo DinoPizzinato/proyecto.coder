@@ -93,7 +93,8 @@
 .carousel iframe {
   width: 100%;
   height: auto;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   padding: 10px;
 }
 
@@ -149,17 +150,14 @@ body {
 h1.nombrepag {
   color: #2c3e50;
   margin: 1px 0;
-  -webkit-animation: scale-up-center 1s;
   animation: scale-up-center 1s;
 }
 
 @keyframes slide-right {
   0% {
-    -webkit-transform: translateX(0);
     transform: translateX(0);
   }
   100% {
-    -webkit-transform: translateX(100px);
     transform: translateX(100px);
   }
 }
@@ -167,7 +165,6 @@ h1.nombrepag {
 h2 {
   text-align: center;
   padding: 15px 0;
-  -webkit-animation: scale-up-center 1s;
   animation: scale-up-center 1s;
 }
 
@@ -228,37 +225,30 @@ body {
 }
 
 .inicio {
-  -webkit-animation: scale-up-center 1s;
   animation: scale-up-center 1s;
 }
 
 .cañas {
-  -webkit-animation: scale-up-center 1s;
   animation: scale-up-center 1s;
 }
 
 .reels {
-  -webkit-animation: scale-up-center 1s;
   animation: scale-up-center 1s;
 }
 
 .señuelos {
-  -webkit-animation: scale-up-center 1s;
   animation: scale-up-center 1s;
 }
 
 .contacto {
-  -webkit-animation: scale-up-center 1s;
   animation: scale-up-center 1s;
 }
 
 @keyframes scale-up-center {
   0% {
-    -webkit-transform: scale(0.5);
     transform: scale(0.5);
   }
   100% {
-    -webkit-transform: scale(1);
     transform: scale(1);
   }
 }
@@ -497,11 +487,9 @@ footer p {
 
 @keyframes flip-horizontal-fwd {
   0% {
-    -webkit-transform: translateZ(0) rotateX(0);
     transform: translateZ(0) rotateX(0);
   }
   100% {
-    -webkit-transform: translateZ(160px) rotateX(-180deg);
     transform: translateZ(160px) rotateX(-180deg);
   }
 }
@@ -532,6 +520,4 @@ footer p {
     padding: 15px;
     max-width: 95%;
   }
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=main.css.map */
